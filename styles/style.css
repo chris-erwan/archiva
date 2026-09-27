@@ -1,0 +1,114 @@
+/* ==========================================================
+   STYLE.CSS — Réglages globaux du site (reset, variables, boutons)
+   Un fichier par composant, comme tu l'as commencé avec header.css.
+   ========================================================== */
+
+/* ----- Variables : couleurs reprises de ton logo (assets/images/logo.png) ----- */
+:root {
+    --color-primary: #ff9500;      /* orange du logo */
+    --color-primary-dark: #e08600;
+    --color-text: #434345;         /* gris foncé du logo */
+    --color-muted: #6f6f6f;
+    --color-bg: #f7f7f8;           /* même gris que header.css */
+    --color-surface: #ffffff;
+    --color-border: #e0e0e0;
+    --radius: 11px;                /* rayon déjà utilisé sur .connexion */
+    --container: 1140px;
+}
+
+/* ----- Reset (déjà présent, on garde tel quel) ----- */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.5;
+}
+
+img { max-width: 100%; display: block; }
+ul  { list-style: none; }
+a   { color: inherit; text-decoration: none; }
+
+/* ----- Conteneur centré, réutilisé sur toutes les sections ----- */
+.container {
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ----- Boutons génériques (DRY : une seule définition, réutilisée partout) ----- */
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.btn--primary   { background-color: var(--color-primary); color: #fff; }
+.btn--primary:hover   { background-color: var(--color-primary-dark); }
+.btn--secondary { background-color: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border); }
+.btn--secondary:hover { background-color: #efefef; }
+.btn--block     { display: block; width: 100%; text-align: center; padding: 14px; }
+
+/* ----- Champ de formulaire générique (DRY : réutilisé par la modale
+   d'ajout de CER ET par les pages connexion / inscription) ----- */
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+.field label{
+    font-size: 13px;
+    font-weight: bold;
+}
+/* :not([type="checkbox"]) évite que cette règle s'applique aussi aux
+   cases à cocher des domaines de spécialité (modal.css) */
+.field input:not([type="checkbox"]),
+.field select,
+.field textarea{
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 13px;
+}
+.field textarea{
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* ==========================================================
+   FORM_FEEDBACK — Message de retour dynamique (JS) pour les
+   formulaires (connexion, inscription, ajout de CER)
+   ========================================================== */
+.form_feedback{
+    display: none;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.form_feedback--visible{
+    display: block;
+}
+.form_feedback--erreur{
+    background-color: #fdecea;
+    color: #f01f1f;
+}
+.form_feedback--succes{
+    background-color: #eaf7ec;
+    color: #1f8f3f;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva - Gérer mes CERs</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Archiva logo">
+            </div>
+
+            <!-- Menu mobile sans JavaScript : case cochée = menu ouvert -->
+            <input type="checkbox" id="menu-toggle" class="nav_toggle">
+            <label for="menu-toggle" class="nav_burger" aria-label="Ouvrir le menu"><span></span></label>
+
+            <div class="nav_panel">
+                <label for="menu-toggle" class="nav_close" aria-label="Fermer le menu">&times;</label>
+                <ul>
+                    <li><a href="index.html" class="nav_link">Accueil</a></li>
+                    <li><a href="cers.html" class="nav_link">CERs</a></li>
+                    <li><a href="favoris.html" class="nav_link">Mes CER Favoris</a></li>
+                    <li><a href="mes-cers.html" class="nav_link nav_link--active">Gestion de CER</a></li>
+                </ul>
+                <a href="connexion.html"><button class="connexion">Connexion</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page_title">Gérer mes CERs</h1>
+
+        <div class="manage_bar">
+            <label>Filtrer :
+                <select>
+                    <option>Tous</option>
+                    <option>X1</option><option>X2</option><option>X3</option><option>X4</option><option>X5</option>
+                </select>
+            </label>
+            <a href="add-cer.html" class="btn btn--primary">Ajouter un CER</a>
+        </div>
+
+        <div class="table_wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Spécialité</th>
+                        <th>Niveaux</th>
+                        <th>Date &uarr;</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Prosit 3.2 - Annuaire Active Directory</td>
+                    <td>Réseaux et Infra; Sécurité</td>
+                    <td>X3</td>
+                    <td>11/07/2024</td>
+                    <td>
+                        <div class="table_actions">
+                            <button class="btn--table btn--edit">Éditer</button>
+                            <button class="btn--table btn--delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Prosit 1.2 - Les réseaux LAN</td>
+                    <td>Réseaux et Infra; Sécurité</td>
+                    <td>X1</td>
+                    <td>13/02/2024</td>
+                    <td>
+                        <div class="table_actions">
+                            <button class="btn--table btn--edit">Éditer</button>
+                            <button class="btn--table btn--delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Prosit 4.2 - Charte d'un projet</td>
+                    <td>Gestion de projet</td>
+                    <td>X4</td>
+                    <td>01/07/2024</td>
+                    <td>
+                        <div class="table_actions">
+                            <button class="btn--table btn--edit">Éditer</button>
+                            <button class="btn--table btn--delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Prosit 4.2 - Base de données analytique</td>
+                    <td>Data</td>
+                    <td>X3</td>
+                    <td>11/07/2024</td>
+                    <td>
+                        <div class="table_actions">
+                            <button class="btn--table btn--edit">Éditer</button>
+                            <button class="btn--table btn--delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Prosit 1.2 - IHM intuitives</td>
+                    <td>Génie-logiciel</td>
+                    <td>X1</td>
+                    <td>11/07/2024</td>
+                    <td>
+                        <div class="table_actions">
+                            <button class="btn--table btn--edit">Éditer</button>
+                            <button class="btn--table btn--delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SAM Gestion des ressources humaines</td>
+                    <td>Gestion de projet</td>
+                    <td>X5</td>
+                    <td>11/09/2024</td>
+                    <td>
+                        <div class="table_actions">
+                            <button class="btn--table btn--edit">Éditer</button>
+                            <button class="btn--table btn--delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Prosit 4.3 - Investigation numérique</td>
+                    <td>Sécurité</td>
+                    <td>X3</td>
+                    <td>11/07/2024</td>
+                    <td>
+                        <div class="table_actions">
+                            <button class="btn--table btn--edit">Éditer</button>
+                            <button class="btn--table btn--delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_container container">
+            <div class="footer_brand">
+                <img class="footer_logo" src="assets/images/logo.png" alt="Archiva logo">
+                <address class="footer_contact">
+                    <p>info@archiva.com</p>
+                    <p>+237 600 000 000</p>
+                    <p>Yassa, Douala/Cameroun</p>
+                </address>
+            </div>
+
+            <nav>
+                <h3 class="footer_title"><a href="index.html">Accueil</a></h3>
+                <ul class="footer_links">
+                    <li><a href="cers.html">CERs</a></li>
+                    <li><a href="favoris.html">Mes CERs favoris</a></li>
+                    <li><a href="mes-cers.html">Gestion de CER</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <h3 class="footer_title">Social Profiles</h3>
+                <div class="footer_icons">
+                    <a href="#" class="footer_icon" aria-label="Facebook">f</a>
+                    <a href="#" class="footer_icon" aria-label="Twitter">t</a>
+                    <a href="#" class="footer_icon" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+        </div>
+        <p class="footer_copyright">&copy; 2024 Archiva. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* ==========================================================
+   TABLE.CSS — Page « Gérer mes CERs »
+   ========================================================== */
+
+.manage_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.manage_bar select{
+    padding: 8px 26px 8px 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.table_wrapper{
+    overflow-x: auto;
+    margin-bottom: 48px;
+    padding: 8px 20px 16px;
+    border-radius: 14px;
+    background-color: var(--color-surface);
+}
+
+table{
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+th{
+    padding: 14px 10px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-border);
+}
+
+td{
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.table_actions{
+    display: flex;
+    gap: 8px;
+}
+
+.btn--table{
+    padding: 5px 12px;
+    font-size: 11px;
+    border-radius: 4px;
+}
+.btn--edit{ background-color: var(--color-primary); color: #fff; }
+.btn--delete{ background-color: #f01f1f; color: #fff; }

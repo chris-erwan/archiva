@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva - Créer un compte</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/auth.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+    <main class="auth_page">
+        <div class="auth_card">
+            <form action="#" method="post">
+                <h1 class="auth_title">Créer un compte</h1>
+                <div class="field">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom complet" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Entrer votre email" required>
+                </div>
+                <div class="field">
+                    <label for="niveau">Niveaux</label>
+                    <select id="niveau" name="niveau">
+                        <option>X1</option><option>X2</option><option>X3</option><option>X4</option><option>X5</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Entrer votre mot de passe" required>
+                </div>
+                <button type="submit" class="btn btn--primary btn--block">Créer un compte</button>
+                <p class="auth_switch">Vous avez déjà un compte ? <a href="connexion.html">Connectez vous</a></p>
+            </form>
+            <img class="auth_illustration" src="assets/images/signup.png" alt="">
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

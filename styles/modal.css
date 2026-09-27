@@ -1,0 +1,84 @@
+/* ==========================================================
+   MODAL.CSS — Modale « Ajouter un nouveau CER »
+   ========================================================== */
+
+.modal{
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.modal_dialog{
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    margin: auto;
+    padding: 24px 32px 32px;
+    border-radius: 8px;
+    background-color: var(--color-surface);
+}
+
+.modal_close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: transparent;
+    color: #e53935;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal_title{
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.checkbox_box{
+    padding: 14px 16px 6px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+}
+
+.dropzone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 28px 16px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    text-align: center;
+    cursor: pointer;
+}
+.dropzone_icon{
+    font-size: 26px;
+}
+.dropzone_text{
+    font-size: 11px;
+    font-style: italic;
+    color: var(--color-muted);
+}
+.dropzone input{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.modal_submit{
+    display: block;
+    margin: 24px auto 0;
+    padding: 10px 26px;
+}

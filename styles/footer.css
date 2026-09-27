@@ -1,0 +1,63 @@
+/* ==========================================================
+   FOOTER.CSS — Pied de page
+   ========================================================== */
+
+footer{
+    background-color: var(--color-surface);
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    gap: 32px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+}
+
+.footer_logo{
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+.footer_contact p{
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.footer_title{
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.footer_links li{
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: var(--color-muted);
+}
+.footer_links a:hover{
+    color: var(--color-primary);
+}
+
+.footer_icons{
+    display: flex;
+    gap: 10px;
+}
+.footer_icon{
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer_copyright{
+    padding: 16px;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    font-size: 11px;
+    color: var(--color-muted);
+}

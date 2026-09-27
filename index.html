@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva - Accueil</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Archiva logo">
+            </div>
+
+            <!-- Menu mobile sans JavaScript : case cochée = menu ouvert -->
+            <input type="checkbox" id="menu-toggle" class="nav_toggle">
+            <label for="menu-toggle" class="nav_burger" aria-label="Ouvrir le menu"><span></span></label>
+
+            <div class="nav_panel">
+                <label for="menu-toggle" class="nav_close" aria-label="Fermer le menu">&times;</label>
+                <ul>
+                    <li><a href="index.html" class="nav_link nav_link--active">Accueil</a></li>
+                    <li><a href="cers.html" class="nav_link">CERs</a></li>
+                    <li><a href="favoris.html" class="nav_link">Mes CER Favoris</a></li>
+                    <li><a href="mes-cers.html" class="nav_link">Gestion de CER</a></li>
+                </ul>
+                <a href="connexion.html"><button class="connexion">Connexion</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero_search">
+                <input type="search" placeholder="Rechercher un CER">
+            </div>
+            <h1 class="hero_title">Bienvenue sur Archiva, votre espace</h1>
+            <p class="hero_subtitle">Espace d'archivage d'anciens CERs</p>
+            <p class="hero_quote">L'homme n'est rien sans son bord</p>
+            <div class="hero_actions">
+                <a href="cers.html"><button class="btn btn--primary">Explorer plus de CER</button></a>
+                <a href="cers.html"><button class="btn btn--secondary">Tous les CERs</button></a>
+            </div>
+        </section>
+
+        <section class="featured container">
+            <div class="featured_header">
+                <div>
+                    <h2 class="featured_title">Les meilleurs CERs du moment</h2>
+                    <p class="featured_text">Découvrez ci-dessous les CERs les plus appréciés par notre communauté d'utilisateurs. Ces CERs ont été sélectionnés et évalués par nos membres en fonction de leur qualité, pertinence et utilité.</p>
+                </div>
+                <button type="button" id="btn-voir-plus" class="btn btn--secondary">Voir plus</button>
+            </div>
+
+            <div class="card_list">
+            <article class="card">
+                <img class="card_image" src="assets/images/active-directory.png" alt="Active Directory">
+                <div class="card_body">
+                    <div class="card_meta">
+                        <button type="button" class="card_fav" aria-label="Ajouter aux favoris"></button>
+                        <span>par Sadjo Mamadou</span>
+                    </div>
+                    <h3 class="card_title">Prosit 3.2 Annuaire Active Directory</h3>
+                    <p class="card_text">L'Annuaire Active Directory (AD) est un service de gestion des identités et des accès utilisé principalement dans les environnements Windows. Il permet de centraliser les comptes utilisateurs, les ordinateurs et les droits d'accès au sein d'une organisation.</p>
+                    <button type="button" class="card_btn">Consulter le CER</button>
+                </div>
+            </article>
+            <article class="card">
+                <img class="card_image" src="assets/images/uml.png" alt="Unified Modeling Language">
+                <div class="card_body">
+                    <div class="card_meta">
+                        <button type="button" class="card_fav" aria-label="Ajouter aux favoris"></button>
+                        <span>par Pauline lock</span>
+                    </div>
+                    <h3 class="card_title">Prosit 2.2 Modélisation UML</h3>
+                    <p class="card_text">Le Langage de Modélisation Unifié, de l'anglais Unified Modeling Language, est un langage de modélisation graphique à base de pictogrammes conçu comme une méthode normalisée de visualisation dans les domaines du développement logiciel.</p>
+                    <button type="button" class="card_btn">Consulter le CER</button>
+                </div>
+            </article>
+            <article class="card">
+                <img class="card_image" src="assets/images/advanced-dev.png" alt="Développement avancé">
+                <div class="card_body">
+                    <div class="card_meta">
+                        <button type="button" class="card_fav" aria-label="Ajouter aux favoris"></button>
+                        <span>par Providence Djekoun.</span>
+                    </div>
+                    <h3 class="card_title">Prosit 4.1 Développement avancé</h3>
+                    <p class="card_text">Advance Web Development fait référence au processus de création de sites Web dynamiques et interactifs qui vont au-delà des pages Web statiques. Cela implique l'utilisation de techniques et de technologies de codage avancées pour créer des sites Web fonctionnels et visuellement attrayants qui améliorent l'expérience utilisateur.</p>
+                    <button type="button" class="card_btn">Consulter le CER</button>
+                </div>
+            </article>
+            <article class="card">
+                <img class="card_image" src="assets/images/api.png" alt="API et Webservice">
+                <div class="card_body">
+                    <div class="card_meta">
+                        <button type="button" class="card_fav" aria-label="Ajouter aux favoris"></button>
+                        <span>par Daryl Noupik</span>
+                    </div>
+                    <h3 class="card_title">Prosit 3.3 API et Webservice</h3>
+                    <p class="card_text">Les API sont principalement axées sur la communication entre applications pour l'accès aux fonctionnalités. L'EDI se concentre sur l'échange de documents commerciaux entre entreprises de manière automatisée et standardisée.</p>
+                    <button type="button" class="card_btn">Consulter le CER</button>
+                </div>
+            </article>
+            <article class="card">
+                <img class="card_image" src="assets/images/microservices.png" alt="Architecture microservices">
+                <div class="card_body">
+                    <div class="card_meta">
+                        <button type="button" class="card_fav" aria-label="Ajouter aux favoris"></button>
+                        <span>par Providence Djekoun.</span>
+                    </div>
+                    <h3 class="card_title">Prosit 4.5 Architecture microservices</h3>
+                    <p class="card_text">Une architecture de microservices est un type d'architecture d'application dans laquelle l'application est développée sous la forme d'un ensemble de services indépendants, déployables séparément et communiquant par des interfaces légères.</p>
+                    <button type="button" class="card_btn">Consulter le CER</button>
+                </div>
+            </article>
+            <article class="card">
+                <img class="card_image" src="assets/images/distributed.png" alt="Architecture distribuée">
+                <div class="card_body">
+                    <div class="card_meta">
+                        <button type="button" class="card_fav" aria-label="Ajouter aux favoris"></button>
+                        <span>par Sadjo Mamadou</span>
+                    </div>
+                    <h3 class="card_title">Prosit 4.5 Architecture distribuée</h3>
+                    <p class="card_text">L'architecture distribuée ou l'informatique distribuée désigne un système d'information ou un réseau pour lequel l'ensemble des ressources disponibles ne se trouvent pas au même endroit ou sur la même machine.</p>
+                    <button type="button" class="card_btn">Consulter le CER</button>
+                </div>
+            </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_container container">
+            <div class="footer_brand">
+                <img class="footer_logo" src="assets/images/logo.png" alt="Archiva logo">
+                <address class="footer_contact">
+                    <p>info@archiva.com</p>
+                    <p>+237 600 000 000</p>
+                    <p>Yassa, Douala/Cameroun</p>
+                </address>
+            </div>
+
+            <nav>
+                <h3 class="footer_title"><a href="index.html">Accueil</a></h3>
+                <ul class="footer_links">
+                    <li><a href="cers.html">CERs</a></li>
+                    <li><a href="favoris.html">Mes CERs favoris</a></li>
+                    <li><a href="mes-cers.html">Gestion de CER</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <h3 class="footer_title">Social Profiles</h3>
+                <div class="footer_icons">
+                    <a href="#" class="footer_icon" aria-label="Facebook">f</a>
+                    <a href="#" class="footer_icon" aria-label="Twitter">t</a>
+                    <a href="#" class="footer_icon" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+        </div>
+        <p class="footer_copyright">&copy; 2024 Archiva. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

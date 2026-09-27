@@ -1,0 +1,53 @@
+/* ==========================================================
+   AUTH.CSS — Pages Connexion et Inscription (sans entête)
+   ========================================================== */
+
+.auth_page{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 24px;
+    background: linear-gradient(to bottom, #f0a56f 0%, #f7d29b 45%, #fbf3e4 100%);
+}
+
+.auth_card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px 48px;
+    border-radius: 28px;
+    background-color: #fff;
+}
+
+.auth_title{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.auth_forgot{
+    display: block;
+    margin-bottom: 16px;
+    text-align: right;
+    font-size: 12px;
+    color: var(--color-primary);
+}
+
+.auth_switch{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+.auth_switch a{
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.auth_illustration{
+    width: 100%;
+    height: auto;
+}
